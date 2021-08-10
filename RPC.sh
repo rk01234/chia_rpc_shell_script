@@ -7,9 +7,11 @@ command=$2
 if [ $# -eq 2 ];then
   data="{}"
 elif [ $# -lt 2 ];then
-  echo "https://github.com/rk01234/chia_rpc_shell_script"
-  echo "argment error?"
-  type=""
+  echo "Argument Error. example"
+  echo "./RPC.sh full_node get_wallet_balance"
+  echo "./RPC.sh wallet get_wallet_balance '{"wallet_id": 1}' "
+  echo "./RPC.sh wallet get_next_address '{"wallet_id": 1, "new_address":true}'"
+  type="go_else"
 else
   data="${@:3}"
 fi
@@ -25,6 +27,7 @@ elif [ ${type} = "wallet" ]; then
 else
   echo "https://github.com/Chia-Network/chia-blockchain/wiki/RPC-Interfaces"
   echo "https://github.com/Chia-Network/chia-blockchain/wiki/RPCExamples"
+  echo "https://github.com/rk01234/chia_rpc_shell_script"
   echo "full_node"
   echo "farmer"
   echo "harvester"
