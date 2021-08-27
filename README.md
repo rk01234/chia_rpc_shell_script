@@ -5,7 +5,6 @@ An easy way to connect to rcp from bash.
 # CAUTION  
   This program uses the RPC port  
   Please check the security of your computer carefully.  
-  The script I have written is short and easy to understand, so please make sure there is no suspicious code inserted before you use it.  
   Have a good farm life!  
 # Recommended usage  
 wget https://raw.githubusercontent.com/rk01234/chia_rpc_shell_script/main/rpc.sh  
